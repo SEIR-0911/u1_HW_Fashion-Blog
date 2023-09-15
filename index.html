@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title></title>
+</head>
+<body>
+    <header>
+        <h1>Sartre's List</h1>
+        <h2>Better-Dressed People</h2>
+        <nav class="header-nav"><!--Based on how I'm understanding the linked WAI guidelines, since there aren't any interactive features that hide this nav bar, no additional ARIA labels are required? I also looked up more about ARIA since I was a little confused, and found "WHen the browser supports an HTML tag with an implicit role with an ARIA equivilant, there is usually no need to add ARIA to the element. Since the nav tag is one listed with an implicit role, it seems like adding label and role would be redundant since there's nothing fancy about this nav bar? Am I just overthinking this and the homework is just saying put it in a <nav> tag instead of just having a line of links free-floating up here? Now that I wrote all this I'm like 95% sure I'm just overthinking it...(source for the extra WAI info I was reading: https://web.dev/learn/accessibility/aria-html/#:~:text=The%20three%20main%20features%20of,on%20the%20page%20or%20app.&text=Properties%20express%20characteristics%20or%20relationships%20to%20an%20object.&text=States%2Fvalues%20define%20the%20current,values%20associated%20with%20the%20element.)-->
+            <ul>
+                <li>
+                    <a href="">Women's</a>
+                </li>
+                <li>
+                    <a href="">Men's</a>
+                </li>
+                <li>
+                    <a href="">On the Street</a>
+                </li>
+                <li>
+                    <a href="">The Catwalk</a>
+                </li>
+                <li>
+                    <a href="">AdWatch</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+
+        <article>
+            <time datetime="2013-11-12">11/12/13</time>
+            <h2>On the Street in Brooklyn</h2>
+            <img src="./blog-image-1.jpg" alt="Woman in orange tunic, gold jewelry, and navy blue pants on a Brooklyn sidewalk.">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis libero, facilis deleniti quam suscipit rem quidem quae neque consectetur, praesentium in! Quo voluptatem dignissimos sit corrupti vel, optio est similique!Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis libero, facilis deleniti quam suscipit rem quidem quae neque consectetur, praesentium in! Quo voluptatem dignissimos sit corrupti vel, optio est similique!</p>
+            <aside>
+                <button>Continues...</button><!--Ok, so... this looks different than the mock up, which just uses anchor text. BUT anchor text would require an ARIA role to make it more accessible, while the <button> tag has that functionality built in already, so according to that "learn accessibility" thing I found and linked above it's best practice to just use the button. So I'm going do that and then see if I can make it look more like the mock-up with css-->
+            </aside>
+        </article>
+
+        <article>
+            <time datetime="2013-11-11">11/11/13</time>
+            <h2>Vintage in Vogue</h2>
+            <img src="./blog-image-2.jpg" alt="A group of three people sporting early 20th-centruy fashion appear to consider the reader's wardrobe.">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat impedit animi perspiciatis harum nobis excepturi placeat nisi molestiae voluptate eligendi consequatur ducimus iusto, qui ut, distinctio earum ullam expedita voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis libero, facilis deleniti quam suscipit rem quidem quae neque consectetur, praesentium in! Quo voluptatem dignissimos sit corrupti vel, optio est similique!</p>
+            <aside>
+                <button>Continues...</button>
+            </aside>
+        </article>
+
+    </main>
+
+    <footer>
+
+        <nav class="footer-nav">
+            <ul>
+                <li>
+                    <a href="">Women's</a>
+                </li>
+                <li>
+                    <a href="">Men's</a>
+                </li>
+                <li>
+                    <a href="">On the Street</a>
+                </li>
+                <li>
+                    <a href="">The Catwalk</a>
+                </li>
+                <li>
+                    <a href="">AdWatch</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h3>&copy; Valet Industries, Inc.</h3>
+
+    </footer>
+    
+</body>
+</html>

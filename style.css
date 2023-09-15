@@ -1,0 +1,103 @@
+HTML{
+    border-left-style:solid;/*It took me way too long to figure out I had to add this to get it to work lol*/
+    border-left-width:5ps;
+    border-left-color:lightgrey;
+}
+
+body{
+    min-height:100%;
+    max-width:1000px;
+    margin:auto;
+    font-family:"Dosis", sans-serif;
+}
+
+header{
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+main{
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+footer{
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+h1{
+    font-size:50px;
+    color:tomato;
+}
+
+img{
+    width:100%;
+}
+
+nav ul{
+    display:flex;
+    justify-content:space-between;
+}
+
+nav ul li{
+    padding:0;
+    list-style-type:none;
+}
+
+nav.header-nav ul li a{
+    color: lightgrey;
+    font-size:25px;
+}
+
+nav.footer-nav ul li a{
+    color:tomato;
+    /*These also aren't perfect with the mockup, but it's late so that's ok. I'm sure there's an easy way to add lines between elements, then maybe to evenly spread everything and then nudge it to the left. That's gonna be future Rhys' problem though*/
+}
+
+article{
+    margin-bottom:4rem;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    border-bottom-color:lightgrey;
+    padding:2rem;
+}
+
+article h2{
+    font-size: 30px;
+    font-weight:lighter;
+}
+
+article time {
+    font-size: 35px;
+    font-weight:200;
+    color:lightgrey;
+    /*There's too much space between the date an the article title, but the inspector isn't showing any margin, padding, or border, so not sure what to do with this rn. It's also late so I'm going to let it not be perfect*/
+}
+
+button{
+    /*display:flex;
+    justify-items:end;
+    I've tried justify-content, -items, and -self here, but nothing's getting it to move over and I'm not sure why. After going into the inspector it looks like the right-hand margin is too big, so I'm just going to change that and call it a day*/
+    background-color:white;
+    border:none;
+    color:tomato;
+    font-size:20px;
+    font-weight:bold;
+    margin-right:0px; /*Well... this isn't doing it either, but the margin no longer highlights from the inspector... what about aside? can I change it in aside?*/
+}
+
+aside{
+    display:flex;
+    justify-content:end; /*SUCCESS!! I guess because the <aside> is the container I want to move, and what I was doing before was moving the button within the confines of the aside, instead of moving the aside within width of the article*/
+}
+
+/*had to look up the drop-cap part, so annotating what each thing does as I add it*/
+article p::first-letter{
+    font-size:30px;
+    color:lightgrey;
+    float:left; /*the first letter goes to the left side of the text - the top of the first letter now lines up with the top of the other letters, instead of the bottoms lining up*/
+    margin-right:.6rem; /*adding the margin keeps the first letter from being squished and gives it a nice box of white space around it. You only need this on the right side of the first letter, though, or it separates it from the text too much and makes it harder to read*/
+}
+
+footer h3{
+    color:lightgrey;
+    font-weight:200;
+}
