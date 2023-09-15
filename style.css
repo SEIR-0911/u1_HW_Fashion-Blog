@@ -1,0 +1,46 @@
+body {
+    background-color: blanchedalmond;
+}
+h1 {
+    text-align: left;
+    font-family: 'Mooli', sans-serif;
+    color: rgba(8, 8, 8, 0.552)
+}
+h3 {
+    font-family: 'Kurale', serif;
+    color: rgba(206, 0, 0, 0.532)
+}
+ul {
+    padding: 10px;
+    background: rgba(0,0,0,0);
+    }
+li {
+    display: inline;
+    padding: 0px 10px
+    0px 40px;
+    color: rgba(0,0,0,)
+}
+img {
+    max-width:90%;
+    display: flex;
+}
+
+article::first-letter {
+    font-family: 'Mooli', sans-serif;
+    font-size: 6em;
+    float: left;
+    margin: 0 0 2em 0;
+    background-size: 100%;
+    background-image: linear-gradient
+    (90deg, red, blue);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+article {
+    max-width: 90%;
+    font-family: 'Mooli', sans-serif;
+}
+time {
+    color: rgba(0, 0, 0, 0.281);
+}
