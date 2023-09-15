@@ -1,0 +1,109 @@
+html {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    border-left: 5px lightgray; /* HW ASSIGNED */
+    font-family: sans-serif; /* HW ASSIGNED */
+}
+
+
+body {
+    min-height: 100%; /* HW ASSIGNED */
+    max-width: 1000px; /* HW ASSIGNED */
+    margin: 0 auto;  /* HW ASSIGNED */
+}
+
+h1 {
+    color: tomato;  /* HW ASSIGNED */
+
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+body h2 {
+    color: lightgray;
+}
+
+header h2 {
+    font-size: 25px;
+    padding: -50px 0px 0px 0px;
+    color: black;
+}
+
+h3 {
+    font-size: 35px;
+    color: black;
+}
+
+
+li {
+    display: inline;
+    list-style-type: none;
+    text-decoration: underline;
+}
+
+img {
+    height: 100%;
+    width: 100%;  /* HW ASSIGNED */
+
+}
+
+header {
+    padding: 1rem 2rem 1rem 2rem;  /* HW ASSIGNED */
+}
+
+#h1Date {
+    color: grey;
+}
+
+a {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+article {
+    margin-bottom: 4rem; /* HW ASSIGNED */
+    border-bottom: 1px solid lightgray; /* HW ASSIGNED */
+    padding-bottom: 2rem; /* HW ASSIGNED */
+}
+
+#topList a {
+    color: lightgray; /* HW ASSIGNED */
+    
+}
+
+footer a {
+    color: tomato;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#continues {
+    display: flex; /* HW ASSIGNED */
+    flex-direction: row-reverse; /* HW ASSIGNED */
+    color: tomato; /* HW ASSIGNED */
+    font-weight: bold; /* HW ASSIGNED */
+    text-decoration: none;
+    padding-right: 0px;
+}
+
+#h2Date {
+    color: red;
+}
+
+p {
+    color: gray;
+}
+
+body {
+    color: black;
+}
+
+article p::first-letter {
+    font-size: 5rem; 
+    color: lightgray;  /* HW ASSIGNED */
+    float: left;
+  }
+
