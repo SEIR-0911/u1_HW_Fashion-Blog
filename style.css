@@ -1,4 +1,5 @@
 body {
+  align-items: center;
   max-height: 100%;
   max-width: 1000px;
   border-left: lightgray solid 5px;
@@ -12,7 +13,12 @@ main {
 }
 
 h1 {
+  text-align: center;
   color: tomato;
+}
+h2 {
+  text-align: center;
+  color: purple;
 }
 
 h3.article-title {
@@ -28,10 +34,6 @@ img {
   width: 100%;
 }
 
-#copywrite {
-  color: lightgray;
-}
-
 a.continu-blog {
   display: flex;
   justify-content: flex-end;
@@ -39,15 +41,36 @@ a.continu-blog {
   color: tomato;
   font-weight: 900;
 }
-
+a:-webkit-any-link {
+  text-decoration: none;
+}
 ul.top-nav {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  font-size: xx-large;
   background-color: lightgray;
+  border: darkgray solid 0.5px;
 }
-ul.footer-nav {
+.nav-title {
+  color: white;
+  padding: 10px;
+  margin: 10px;
+}
+footer {
   background-color: tomato;
+}
+.footer-nav {
+  list-style-type: symbols("|");
+  display: flex;
+  justify-content: space-around;
+}
+#address {
+  display: inline-block;
+}
+#copywrite {
+  color: lightgray;
+  width: 100%;
 }
 
 p.blog-summary::first-letter {

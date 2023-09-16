@@ -12,15 +12,16 @@
       <h2>This is a h2 for the subtitle inside the page header</h2>
       <nav>
         <ul class="top-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a class="nav-title" href="#">Home</a></li>
+          <li><a class="nav-title" href="#">About</a></li>
+          <li><a class="nav-title" href="#">Gallery</a></li>
+          <li><a class="nav-title" href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <article>
+        <img src="/blog-image-1.jpg" alt="alt text for my first blog" />
         <h3 class="article-title">My First ARticle Title!</h3>
         <time datetime="2023-09-16">16 Sep 2023</time>
         <p class="blog-summary">
@@ -31,6 +32,7 @@
         <a href="#" class="continu-blog">continues...</a>
       </article>
       <article>
+        <img src="/blog-image-2.jpg" alt="alt text for my second blog" />
         <h3 class="article-title">My Second ARticle Title!</h3>
         <time datetime="2023-09-16">16 Sep 2023</time>
         <p class="blog-summary">
@@ -42,20 +44,20 @@
       </article>
     </main>
 
-    <footer>
-      <ul class="footer-nav">
-        <h4>Website Map:</h4>
+    <footer >
+
+      <nav class="footer-nav">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Gallery</a></li>
         <li><a href="#">Contact</a></li>
-      </ul>
-      <nav></nav>
+     <nav>
+     
       <p id="copywrite">
         <large>&copy;</large> This is a practice website for GA built by
         <large>Shirin Mohajer</large>
       </p>
-      <address>
+      <address id="address">
         Contact me <a href="mailto:shirin.mohajer@gmail.com">shirin.mohajer@gmail.com</a>
       </address>
     </footer>
