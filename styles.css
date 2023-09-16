@@ -1,0 +1,122 @@
+body {
+    border-left: 5px solid lightgray;
+    min-height: 100%vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    padding: 1rem 2rem;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style-type: none;
+}
+
+.main-nav{
+    color: lightgray;
+    transition: .75s;
+}
+
+.main-nav:hover {
+    color: tomato;
+}
+
+main {
+    padding: 1rem 2rem;
+}
+
+article {
+    margin-bottom: 4rem;
+    border-bottom: 1px solid lightgray;
+}
+
+p {
+    width: 100%;
+    line-height: 1.5rem;
+}
+
+.date {
+    font-size: 1.7rem;
+    padding: 0;
+    margin: 5px 0;
+    color: lightgray;
+}
+
+.blog-title {
+    font-size: 1.7rem;
+    margin: 5px 0 10px 0;
+}
+
+.blog p::first-letter {
+    font-size: 5rem;
+    background-color: #fff;
+    padding: 6px 3px;
+    margin-right: 6px;
+    float: left;
+    color: #ccc;
+  }
+
+footer {
+    padding: 1rem 2rem;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style-type: none;
+}
+
+.last-nav {
+    color: tomato;
+    transition: .5s;
+}
+
+.last-nav:hover {
+    color: #333;
+}
+
+
+
+h1 {
+    color: tomato;
+}
+
+#sidewalk {
+    width: 100%;
+}
+
+#party {
+    width: 100%;
+}
+
+.collapsible {
+    display: flex;
+    justify-content: end;
+    background-color: #fff;
+    color: tomato;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1rem;
+    transition: .5s;
+  }
+
+  .collapsible:hover {
+    color: #333;
+  }
+
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
