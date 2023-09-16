@@ -1,0 +1,57 @@
+body {
+  max-height: 100%;
+  max-width: 1000px;
+  border-left: lightgray solid 5px;
+  font-family: sans-serif;
+}
+
+footer,
+header,
+main {
+  padding: 1rem 2rem;
+}
+
+h1 {
+  color: tomato;
+}
+
+h3.article-title {
+  font-size: x-large;
+}
+article {
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: lightgray solid 1px;
+}
+
+img {
+  width: 100%;
+}
+
+#copywrite {
+  color: lightgray;
+}
+
+a.continu-blog {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: solid;
+  color: tomato;
+  font-weight: 900;
+}
+
+ul.top-nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgray;
+}
+ul.footer-nav {
+  background-color: tomato;
+}
+
+p.blog-summary::first-letter {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: lightgray;
+}
