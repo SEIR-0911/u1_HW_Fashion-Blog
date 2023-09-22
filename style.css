@@ -1,0 +1,120 @@
+html {
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-left-color: lightgray;
+}
+
+body {
+    min-height: 100vh;
+    font-family: sans-serif;
+    max-width: 1000px;
+    margin: auto;
+
+}
+
+header, main, footer {
+    padding: 1rem 2rem;
+}
+
+h1 {
+    color: tomato;
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-weight: lighter;
+}
+
+h3 {
+    font-weight: lighter;
+    font-size: 30px;
+
+}
+
+h4 {
+    font-weight: normal;
+    color: lightgrey;
+}
+
+p {
+    font-weight: lighter;
+    line-height: 1.2;
+}
+
+p::first-letter {
+    initial-letter: 4;
+    color: lightgray;
+    margin-right: .75em;
+}
+
+#initial-letter
+
+article {
+    border-bottom: solid lightgray;
+    margin-top: 30px;
+}
+
+
+article > * {
+    margin: 5px 0 ;
+}
+
+time {
+    font-weight: lighter;
+    font-size: 30px;
+    color: lightgray;
+}
+
+#continue-article {
+    margin: 20px 0;
+    font-weight: bold;
+    text-align: right;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+    margin: 0px 0px 0px 0px;
+}
+
+#head {
+    list-style-type: none;
+    padding: 0 15% 0 0; 
+
+}
+
+#head-a {
+    font-size: 20px;
+    color: lightgray;
+    border-bottom: solid lightgray;
+}
+
+#foot {
+    list-style-type: none;
+    padding: 0 15% 0 0; 
+
+}
+
+#foot-a, #foot-a1 {
+    font-size: 15px;
+    color: tomato;
+}
+
+#foot-a {
+    border-right: tomato solid;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* issues:
+1. even and dynamic lines between the footer list
+2. dynamic font sizing e.g., for mobile (especially the lists/nav)
+*/
